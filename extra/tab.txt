@@ -1,0 +1,106 @@
+
+
+
+1. Add Company 
+
+--Method Post
+
+Request 
+
+http://localhost:3000/api/company
+
+{
+    "name":"net web technology pvt limited",
+    "logoUrl":"http://link/new_Web_technogy"
+}
+
+Response
+
+{
+    "status": "Success",
+    "message": "Company Added Succussfully.",
+    "data": {
+        "name": "net web technology pvt limited",
+        "logoUrl": "http://link/new_Web_technogy",
+        "_id": "6415c4a5002afda2919431e2",
+        "createdAt": "2023-03-18T14:03:17.611Z",
+        "updatedAt": "2023-03-18T14:03:17.611Z",
+        "__v": 0
+    }
+}
+
+
+2. 
+Add List 
+Method Post
+http://localhost:3000/api/company/companyAddList
+
+request 
+
+
+{
+  "store_name": "kariyana store",
+  "address": "gali no 6",
+  "area": "islamabad amritsar",
+  "contact_number": "7696084898",
+  "company_id": "6415c4a5002afda2919431e2", 
+  "visit_by": "amritsar"
+}
+
+response 
+
+{
+    "status": "Success",
+    "message": "Company List Added Succussfully.",
+    "data": {
+        "store_name": "kariyana store",
+        "address": "gali no 6",
+        "area": "islamabad amritsar",
+        "contact_number": "7696084898",
+        "company_id": "6415c4a5002afda2919431e2",
+        "visit_by": "amritsar",
+        "_id": "6415c5bb002afda2919431e6",
+        "createdAt": "2023-03-18T14:07:55.300Z",
+        "updatedAt": "2023-03-18T14:07:55.300Z",
+        "__v": 0
+    }
+}
+
+3. Get List
+
+method GET
+
+http://localhost:3001/api/company/list/store/6415c4a5002afda2919431e2
+
+Response 
+
+{
+    "status": "Success",
+    "message": "Company Store List Succussfully.",
+    "data": [
+        {
+            "_id": "6415c5bb002afda2919431e6",
+            "store_name": "kariyana store",
+            "address": "gali no 6",
+            "area": "islamabad amritsar",
+            "contact_number": "7696084898",
+            "company_id": "6415c4a5002afda2919431e2",
+            "visit_by": "amritsar",
+            "createdAt": "2023-03-18T14:07:55.300Z",
+            "updatedAt": "2023-03-18T14:07:55.300Z",
+            "__v": 0
+        },
+        {
+            "_id": "6415c646002afda2919431e8",
+            "store_name": "store",
+            "address": "gali no 12",
+            "area": "islamabad delhi",
+            "contact_number": "7696084893",
+            "company_id": "6415c4a5002afda2919431e2",
+            "visit_by": "delhi",
+            "createdAt": "2023-03-18T14:10:14.736Z",
+            "updatedAt": "2023-03-18T14:10:14.736Z",
+            "__v": 0
+        }
+    ]
+}

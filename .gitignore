@@ -1,0 +1,7 @@
+node_modules
+/client/node_modules
+/uploads/ppt_images/*
+/uploads/ppt_files/*
+!/uploads/ppt_files/index.html
+!/uploads/ppt_files/index.html
+!/uploads/ppt_images/index.html

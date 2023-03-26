@@ -1,0 +1,15 @@
+.nav-link, .navbar-brand{
+    color:white;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+.navbar-brand:hover {
+    color: white;
+  }
+
+.nav-link:hover{
+    color: white;
+}
+
